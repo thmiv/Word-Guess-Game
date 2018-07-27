@@ -15,12 +15,12 @@ var numWinsEl = document.getElementById('numWins');     // display number of tim
 var numLossesEL = document.getElementById('numLoss');     // display number of times user lost
 
 // array of words 
-words = ["banzai", "coconut", "javascript"];
+words = ["mexico", "russia", "england", "japan", "canada", "brazil", "iraq", "latvia"];
 
 // game initialization
 function setupGame() {
     word = words[Math.floor(Math.random() * words.length)];
-    guesses = word.length;
+    guesses = (word.length) * 2;
     wrongGuesses = [];
     correctGuesses = [];
 
@@ -45,7 +45,7 @@ function guessUpdate(letter) {
 
     if (word.indexOf(letter) === -1) { // letter is NOT in the word
         wrongGuesses.push(letter); // update letters guessed
-        lettersGuessedEl.innerHTML = wrongGuesses.join(' - ').toUpperCase(); // append wrong letter to HTML
+        lettersGuessedEl.innerHTML = wrongGuesses.join(' - '); // append wrong letter to HTML
     } else { // letter IS in the word
         // replace underscore with the letter
         for (j = 0; j < word.length; j++) {
@@ -85,5 +85,5 @@ document.onkeyup = function (event) {
     checkForWin();
 };
 
-alert("Press OK to start game");
+//alert("Press OK to start game");
 setupGame();

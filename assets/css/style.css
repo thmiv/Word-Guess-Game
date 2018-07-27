@@ -1,20 +1,45 @@
 body {
-    background: #999999;
+    background-image: url("../images/cartographer.png");
+    
 }
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: #f2f2f2;
-  padding: 20px;
+#footBox {
+  clear: both;
+  text-align: center;
+  background-image: url("../images/world.jpg");
+  background-size: 40%;
+  height: 50px;
+}
+#jumboHeader {
+    background: url("../images/world.jpg");
+    background-size: 70%;
 }
 .col-md-6 {
-    border: 1px dotted darkblue;
+    border: 1px solid gainsboro;
 }
 .col-md-3 {
-    border: 1px dotted darkred;
+    border: 1px dotted gainsboro;
 }
-#currentWord {
-    font-family: Arial, Helvetica, sans-serif;
+#currentWord, #lettersRemaining, #lettersGuessed, #numLoss, #numWins {
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
+    font-size: 22px;
+    
+    color: blanchedalmond;
+    text-transform: uppercase;
+}
+p, h3, h6 {
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h4, h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    color: darkorange;
+}
+.push {
+    min-height: calc(100vh - 600px)
+}
+img {
+    padding: 30px;
 }
