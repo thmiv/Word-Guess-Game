@@ -11,6 +11,9 @@ footer {
 .col-md-6 {
     border: 1px dotted darkblue;
 }
+.col-md-3 {
+    border: 1px dotted darkred;
+}
 #currentWord {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
