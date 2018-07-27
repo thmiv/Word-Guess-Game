@@ -15,7 +15,7 @@ var numWinsEl = document.getElementById('numWins');     // display number of tim
 var numLossesEL = document.getElementById('numLoss');     // display number of times user lost
 
 // array of words 
-words = ["mexico", "russia", "england", "japan", "canada", "brazil", "iraq", "latvia"];
+words = ["mexico", "russia", "england", "japan", "canada", "brazil", "iraq", "iran", "latvia"];
 
 // game initialization
 function setupGame() {
@@ -85,5 +85,5 @@ document.onkeyup = function (event) {
     checkForWin();
 };
 
-//alert("Press OK to start game");
+alert("Press OK to start game");
 setupGame();
